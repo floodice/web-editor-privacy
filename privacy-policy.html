@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - 网页编辑器 Privacy Policy - Web Editor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .language-switch {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .language-switch button {
+            background: white;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 8px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .language-switch button:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .language-switch button.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background: #f0f4ff;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .highlight strong {
+            color: #667eea;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .last-updated {
+            text-align: right;
+            color: #999;
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🔒 隐私政策 / Privacy Policy</h1>
+            <p>网页编辑器 Chrome 扩展 / Web Editor Chrome Extension</p>
+        </div>
+
+        <!-- Language Switch -->
+        <div class="language-switch">
+            <button onclick="switchLanguage('zh')" id="btn-zh" class="active">🇨🇳 简体中文</button>
+            <button onclick="switchLanguage('en')" id="btn-en">🇬🇧 English</button>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Chinese Version -->
+            <div id="content-zh" class="lang-content active">
+                <h2>📋 隐私政策</h2>
+                
+                <div class="highlight">
+                    <strong>核心承诺：</strong>本扩展完全尊重您的隐私。我们不收集、不存储、不传输任何您的个人数据或浏览信息。
+                </div>
+
+                <h2>🎯 扩展功能说明</h2>
+                <p><strong>网页编辑器</strong>是一个简单的浏览器工具，允许您直接在网页上编辑内容。其主要功能包括：</p>
+                <ul>
+                    <li>点击扩展图标启用网页编辑模式</li>
+                    <li>直接修改网页上的文本内容</li>
+                    <li>通过"完成编辑"按钮退出编辑模式</li>
+                    <li>支持中文和英文界面</li>
+                </ul>
+
+                <h2>🔐 我们不收集的信息</h2>
+                <p>本扩展设计遵循"零数据收集"原则：</p>
+                <ul>
+                    <li>❌ <strong>不收集</strong>您访问的网站地址</li>
+                    <li>❌ <strong>不收集</strong>您编辑的内容</li>
+                    <li>❌ <strong>不收集</strong>您的浏览历史</li>
+                    <li>❌ <strong>不收集</strong>您的个人身份信息</li>
+                    <li>❌ <strong>不收集</strong>您的设备信息</li>
+                    <li>❌ <strong>不使用</strong>任何跟踪技术或分析工具</li>
+                    <li>❌ <strong>不使用</strong>Cookies 或类似技术</li>
+                </ul>
+
+                <h2>💾 本地存储的信息</h2>
+                <p>本扩展仅在您的浏览器本地存储以下设置：</p>
+                <ul>
+                    <li>✅ <strong>语言偏好</strong>：您选择的界面语言（中文或英文）</li>
+                </ul>
+                <p>这些设置：</p>
+                <ul>
+                    <li>存储在 Chrome 的同步存储（chrome.storage.sync）中</li>
+                    <li>仅用于在不同设备间同步您的语言偏好</li>
+                    <li>由 Chrome 浏览器管理，不会被我们访问</li>
+                    <li>您可以随时通过 Chrome 设置清除这些数据</li>
+                </ul>
+
+                <h2>🔑 权限说明</h2>
+                <p>本扩展请求以下权限，仅用于实现核心功能：</p>
+                
+                <h3>1. activeTab（活动标签页）</h3>
+                <ul>
+                    <li><strong>用途：</strong>访问您当前正在查看的网页</li>
+                    <li><strong>使用时机：</strong>仅在您点击扩展图标时</li>
+                    <li><strong>具体操作：</strong>启用编辑模式、添加"完成编辑"按钮、显示通知</li>
+                </ul>
+
+                <h3>2. scripting（脚本注入）</h3>
+                <ul>
+                    <li><strong>用途：</strong>向网页注入必要的脚本和样式</li>
+                    <li><strong>具体操作：</strong>
+                        <ul>
+                            <li>设置网页为可编辑状态</li>
+                            <li>创建和管理编辑控制按钮</li>
+                            <li>显示编辑状态通知</li>
+                            <li>防止编辑模式下的意外点击</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>3. storage（存储）</h3>
+                <ul>
+                    <li><strong>用途：</strong>保存您的语言偏好设置</li>
+                    <li><strong>存储内容：</strong>仅包含语言选择（"zh_CN" 或 "en"）</li>
+                </ul>
+
+                <h3>4. &lt;all_urls&gt;（主机权限）</h3>
+                <ul>
+                    <li><strong>用途：</strong>允许在任何网站上使用编辑功能</li>
+                    <li><strong>说明：</strong>虽然请求了广泛权限，但我们：
+                        <ul>
+                            <li>不会主动访问任何网站</li>
+                            <li>仅在您明确点击扩展图标时才在当前页面工作</li>
+                            <li>不会在后台运行或监控您的浏览活动</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>🌐 数据传输</h2>
+                <div class="highlight">
+                    <strong>零网络通信：</strong>本扩展不包含任何网络请求代码，不会向任何远程服务器发送数据。
+                </div>
+                <ul>
+                    <li>所有功能完全在您的浏览器本地执行</li>
+                    <li>不连接任何外部服务器或 API</li>
+                    <li>您编辑的内容永远不会离开您的设备</li>
+                    <li>没有数据上传或下载</li>
+                </ul>
+
+                <h2>👥 第三方服务</h2>
+                <p>本扩展：</p>
+                <ul>
+                    <li>❌ 不使用任何第三方分析服务（如 Google Analytics）</li>
+                    <li>❌ 不使用任何广告网络</li>
+                    <li>❌ 不集成任何社交媒体插件</li>
+                    <li>❌ 不包含任何第三方追踪代码</li>
+                </ul>
+
+                <h2>🔄 数据保留</h2>
+                <ul>
+                    <li>除了语言偏好设置外，我们不保留任何数据</li>
+                    <li>您对网页的编辑是临时的，刷新页面后即消失</li>
+                    <li>卸载扩展后，语言设置会被 Chrome 自动清除</li>
+                </ul>
+
+                <h2>👶 儿童隐私</h2>
+                <p>本扩展不会有意收集 13 岁以下儿童的任何信息。实际上，我们不收集任何人的任何信息。</p>
+
+                <h2>🔒 安全性</h2>
+                <ul>
+                    <li>所有代码在您的浏览器本地运行</li>
+                    <li>不存在数据泄露风险（因为没有数据传输）</li>
+                    <li>扩展不会修改网站的原始内容（仅临时编辑）</li>
+                    <li>不会干扰网站的正常功能</li>
+                </ul>
+
+                <h2>📜 开源承诺</h2>
+                <p>我们承诺本扩展的透明性：</p>
+                <ul>
+                    <li>所有代码都可以在 Chrome 扩展安装目录中查看</li>
+                    <li>欢迎技术用户审查源代码</li>
+                    <li>我们没有混淆或加密任何代码</li>
+                </ul>
+
+                <h2>🔄 隐私政策更新</h2>
+                <p>如果我们更新此隐私政策，我们会：</p>
+                <ul>
+                    <li>在此页面发布新版本</li>
+                    <li>更新页面底部的"最后更新"日期</li>
+                    <li>如有重大变更，会通过扩展更新说明通知您</li>
+                </ul>
+
+                <h2>📧 联系我们</h2>
+                <p>如果您对本隐私政策有任何疑问或担忧，请通过以下方式联系我们：</p>
+                <ul>
+                    <li>📧 Email: pingloop4app@gmail.com</li>
+                    <li>🐛 问题反馈: Chrome Web Store 评论区</li>
+                </ul>
+
+                <h2>⚖️ 法律依据</h2>
+                <p>本扩展的隐私实践符合：</p>
+                <ul>
+                    <li>欧盟《通用数据保护条例》(GDPR)</li>
+                    <li>美国《加州消费者隐私法案》(CCPA)</li>
+                    <li>Chrome Web Store 开发者政策</li>
+                </ul>
+                <p>由于我们不收集任何个人数据，因此没有数据处理、存储或共享的合规负担。</p>
+
+                <div class="last-updated">
+                    最后更新日期：2024年11月23日
+                </div>
+            </div>
+
+            <!-- English Version -->
+            <div id="content-en" class="lang-content">
+                <h2>📋 Privacy Policy</h2>
+                
+                <div class="highlight">
+                    <strong>Core Commitment:</strong> This extension fully respects your privacy. We do not collect, store, or transmit any of your personal data or browsing information.
+                </div>
+
+                <h2>🎯 Extension Functionality</h2>
+                <p><strong>Web Editor</strong> is a simple browser tool that allows you to edit content directly on web pages. Its main features include:</p>
+                <ul>
+                    <li>Click the extension icon to enable web editing mode</li>
+                    <li>Directly modify text content on web pages</li>
+                    <li>Exit editing mode via the "Done Editing" button</li>
+                    <li>Support for Chinese and English interfaces</li>
+                </ul>
+
+                <h2>🔐 Information We Do NOT Collect</h2>
+                <p>This extension follows a "zero data collection" principle:</p>
+                <ul>
+                    <li>❌ <strong>We do NOT collect</strong> the websites you visit</li>
+                    <li>❌ <strong>We do NOT collect</strong> the content you edit</li>
+                    <li>❌ <strong>We do NOT collect</strong> your browsing history</li>
+                    <li>❌ <strong>We do NOT collect</strong> your personal identity information</li>
+                    <li>❌ <strong>We do NOT collect</strong> your device information</li>
+                    <li>❌ <strong>We do NOT use</strong> any tracking or analytics tools</li>
+                    <li>❌ <strong>We do NOT use</strong> cookies or similar technologies</li>
+                </ul>
+
+                <h2>💾 Locally Stored Information</h2>
+                <p>This extension only stores the following settings locally in your browser:</p>
+                <ul>
+                    <li>✅ <strong>Language Preference</strong>: Your chosen interface language (Chinese or English)</li>
+                </ul>
+                <p>These settings:</p>
+                <ul>
+                    <li>Are stored in Chrome's sync storage (chrome.storage.sync)</li>
+                    <li>Are only used to sync your language preference across devices</li>
+                    <li>Are managed by Chrome browser and not accessible to us</li>
+                    <li>Can be cleared at any time through Chrome settings</li>
+                </ul>
+
+                <h2>🔑 Permission Explanations</h2>
+                <p>This extension requests the following permissions solely to implement core functionality:</p>
+                
+                <h3>1. activeTab</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> Access the web page you are currently viewing</li>
+                    <li><strong>When Used:</strong> Only when you click the extension icon</li>
+                    <li><strong>Specific Actions:</strong> Enable editing mode, add "Done Editing" button, display notifications</li>
+                </ul>
+
+                <h3>2. scripting</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> Inject necessary scripts and styles into web pages</li>
+                    <li><strong>Specific Actions:</strong>
+                        <ul>
+                            <li>Set web page to editable state</li>
+                            <li>Create and manage editing control buttons</li>
+                            <li>Display editing status notifications</li>
+                            <li>Prevent accidental clicks during editing mode</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>3. storage</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> Save your language preference settings</li>
+                    <li><strong>Storage Content:</strong> Only contains language selection ("zh_CN" or "en")</li>
+                </ul>
+
+                <h3>4. &lt;all_urls&gt; (Host Permissions)</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> Allow editing functionality on any website</li>
+                    <li><strong>Note:</strong> Although we request broad permissions, we:
+                        <ul>
+                            <li>Will not proactively access any websites</li>
+                            <li>Only work on the current page when you explicitly click the extension icon</li>
+                            <li>Will not run in the background or monitor your browsing activity</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>🌐 Data Transmission</h2>
+                <div class="highlight">
+                    <strong>Zero Network Communication:</strong> This extension contains no network request code and will not send data to any remote servers.
+                </div>
+                <ul>
+                    <li>All functionality runs entirely locally in your browser</li>
+                    <li>No connection to any external servers or APIs</li>
+                    <li>The content you edit never leaves your device</li>
+                    <li>No data uploads or downloads</li>
+                </ul>
+
+                <h2>👥 Third-Party Services</h2>
+                <p>This extension:</p>
+                <ul>
+                    <li>❌ Does not use any third-party analytics services (e.g., Google Analytics)</li>
+                    <li>❌ Does not use any advertising networks</li>
+                    <li>❌ Does not integrate any social media plugins</li>
+                    <li>❌ Does not contain any third-party tracking code</li>
+                </ul>
+
+                <h2>🔄 Data Retention</h2>
+                <ul>
+                    <li>We do not retain any data except language preference settings</li>
+                    <li>Your edits to web pages are temporary and disappear after refreshing</li>
+                    <li>Language settings are automatically cleared by Chrome after uninstalling the extension</li>
+                </ul>
+
+                <h2>👶 Children's Privacy</h2>
+                <p>This extension does not knowingly collect any information from children under 13. In fact, we do not collect any information from anyone.</p>
+
+                <h2>🔒 Security</h2>
+                <ul>
+                    <li>All code runs locally in your browser</li>
+                    <li>No risk of data breaches (because there is no data transmission)</li>
+                    <li>The extension does not modify the original content of websites (only temporary edits)</li>
+                    <li>Does not interfere with normal website functionality</li>
+                </ul>
+
+                <h2>📜 Open Source Commitment</h2>
+                <p>We are committed to the transparency of this extension:</p>
+                <ul>
+                    <li>All code can be viewed in the Chrome extension installation directory</li>
+                    <li>Technical users are welcome to review the source code</li>
+                    <li>We have not obfuscated or encrypted any code</li>
+                </ul>
+
+                <h2>🔄 Privacy Policy Updates</h2>
+                <p>If we update this privacy policy, we will:</p>
+                <ul>
+                    <li>Post the new version on this page</li>
+                    <li>Update the "Last Updated" date at the bottom of the page</li>
+                    <li>Notify you through extension update notes if there are significant changes</li>
+                </ul>
+
+                <h2>📧 Contact Us</h2>
+                <p>If you have any questions or concerns about this privacy policy, please contact us:</p>
+                <ul>
+                    <li>📧 Email: pingloop4app@gmail.com</li>
+                    <li>🐛 Issue Feedback: Chrome Web Store Reviews</li>
+                </ul>
+
+                <h2>⚖️ Legal Basis</h2>
+                <p>The privacy practices of this extension comply with:</p>
+                <ul>
+                    <li>EU General Data Protection Regulation (GDPR)</li>
+                    <li>California Consumer Privacy Act (CCPA)</li>
+                    <li>Chrome Web Store Developer Policies</li>
+                </ul>
+                <p>Since we do not collect any personal data, there is no compliance burden for data processing, storage, or sharing.</p>
+
+                <div class="last-updated">
+                    Last Updated: November 23, 2024
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2024 网页编辑器 Web Editor. All rights reserved.</p>
+            <p>Version 1.0 | <a href="https://chrome.google.com/webstore" target="_blank">Chrome Web Store</a></p>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Remove active state from all buttons
+            document.querySelectorAll('.language-switch button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+        
+        // Load saved language preference on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'zh';
+            switchLanguage(savedLang);
+        });
+    </script>
+</body>
+</html>
+
